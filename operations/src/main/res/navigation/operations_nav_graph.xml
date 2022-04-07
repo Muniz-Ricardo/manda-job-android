@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/operations_nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="br.com.nouva.mandajob.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main_op"/>
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="br.com.nouva.mandajob.fragment.DiscoverFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="br.com.nouva.mandajob.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="br.com.nouva.mandajob.fragment.OrdersFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_orders"/>
+</navigation>

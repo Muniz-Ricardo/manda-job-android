@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    tools:ignore="HardcodedText"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_background_pre_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layerType="software"
+        android:visibility="visible"
+        android:src="@drawable/background_pre_register_019"
+        />
+
+    <LinearLayout
+        android:id="@+id/label_text_pre_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@+id/layout_button_next"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tv_label_pre_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/cairo_semibold"
+                android:lineSpacingExtra="-18sp"
+                android:text="Olá, já faz parte dessa onda?"
+                android:textColor="@color/colorWhite"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_regular"
+                    android:visibility="gone"
+                    android:letterSpacing="0.022"
+                    android:includeFontPadding="true"
+                    android:lineSpacingExtra="0dp"
+                    android:text="Possuo conta"
+                    android:textColor="@color/colorLight020"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_button_login_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginStart="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    android:backgroundTint="@android:color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/shape_label_login_register">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:letterSpacing="0.022"
+                            android:includeFontPadding="true"
+                            android:lineSpacingExtra="0dp"
+                            android:text="Entrar"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bottom_shadow_teste">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="0dp"
+            android:rowOrderPreserved="false"
+            android:columnOrderPreserved="false"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_pre_login_freelancer"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_column="0"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="2"
+                android:layout_gravity="fill_horizontal"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_migrate_card"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="Quero entrar"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_pre_login_contractor"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:visibility="gone"
+                android:layout_column="1"
+                android:layout_columnWeight="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_migrate_card"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="Contratar"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top">
+
+                <CheckBox
+                    android:id="@+id/checkbox_agree_terms"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="4dp"
+                    android:button="@null"
+                    android:background="?android:attr/listChoiceIndicatorMultiple"
+                    android:theme="@style/checkBoxStyle" />
+
+                <TextView
+                    android:id="@+id/tv_check_box_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:letterSpacing="0.022"
+                    android:includeFontPadding="true"
+                    android:lineSpacingExtra="-10sp"
+                    android:text="I agree all Terms of service"
+                    android:textColor="@color/colorLight020"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

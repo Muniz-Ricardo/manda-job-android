@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_default_peek_height">100dp</dimen>
+    <dimen name="bottom_sheet_default_peek_height_view_more">220dp</dimen>
+    <dimen name="bottom_sheet_default_peek_height_filter">380dp</dimen>
+    <dimen name="bottom_sheet_default_peek_height_pix">184dp</dimen>
+
+    <dimen name="spacing_horizontal_size">16dp</dimen>
+    <dimen name="spacing_horizontal_large_size">12dp</dimen>
+
+    <dimen name="radius_card_small">3dp</dimen>
+
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderImage">60dp</dimen>
+    <dimen name="placeholderTextHeight">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <!-- size font head -->
+    <dimen name="size_text_h1">28sp</dimen>
+    <dimen name="size_text_h2">23sp</dimen>
+
+    <!-- size font sub title head -->
+    <dimen name="size_text_sub_title_h1">20sp</dimen>
+    <dimen name="size_text_sub_title_h2">18sp</dimen>
+    <dimen name="size_text_sub_title_h3">16sp</dimen>
+
+    <!-- size font body content -->
+    <dimen name="size_text_body_content">15sp</dimen>
+
+    <!-- size margin component different -->
+    <dimen name="margin_different_component">30dp</dimen>
+
+    <!-- size margin component equals -->
+    <dimen name="margin_component_equals_label">20dp</dimen>
+
+    <!-- card margins -->
+    <dimen name="card_margin_end">10dp</dimen>
+    <dimen name="card_margin_top">10dp</dimen>
+
+    <!-- card radius large -->
+    <dimen name="radius_large_card">10dp</dimen>
+
+    <!-- card radius small -->
+    <dimen name="radius_small_card">7dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="button_large_radius">3dp</dimen>
+    <dimen name="button_large_padding">15dp</dimen>
+    <dimen name="button_large_text_size">18sp</dimen>
+
+    <!-- button small -->
+    <dimen name="button_small_radius">3dp</dimen>
+    <dimen name="button_small_padding">15dp</dimen>
+    <dimen name="button_small_text_size">16sp</dimen>
+
+    <dimen name="button_small_padding_horizontal">20dp</dimen>
+    <dimen name="button_small_padding_vertical">10dp</dimen>
+
+
+    <!-- toolbar -->
+    <dimen name="navbar_margin_top">10dp</dimen>
+    <dimen name="navbar_margin_start">12dp</dimen>
+    <dimen name="navbar_margin_end">20dp</dimen>
+
+    <dimen name="navbar_text_size">18sp</dimen>
+    <dimen name="navbar_text_margin_start">20dp</dimen>
+
+    <!-- input -->
+    <dimen name="input_margin_top">5dp</dimen>
+
+    <!-- images profile large -->
+    <dimen name="profile_large_rounded_width">60dp</dimen>
+    <dimen name="profile_large_rounded_height">50dp</dimen>
+    <dimen name="profile_large_radius">7dp</dimen>
+
+    <!-- images profile small -->
+    <dimen name="profile_small_rounded_width">40dp</dimen>
+    <dimen name="profile_small_rounded_height">35dp</dimen>
+    <dimen name="profile_small_radius">7dp</dimen>
+
+    <dimen name="size_no_collapsed">170dp</dimen>
+    <dimen name="size_collapsed">50dp</dimen>
+
+
+</resources>

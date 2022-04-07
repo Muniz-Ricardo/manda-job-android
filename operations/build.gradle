@@ -1,0 +1,118 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    ext.target = 29
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion target
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+
+    packagingOptions {
+        exclude 'resources.arsc'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    def lifecycle_version = '2.3.1'
+    def glide_version = '4.11.0'
+    def koin_version = '2.1.5'
+    def material_version = '1.0.0'
+    def circle_image_version = '3.0.0'
+    def lottie_version = '3.4.1'
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    implementation 'com.pixplicity.sharp:library:1.1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.github.haroldadmin:NetworkResponseAdapter:4.1.0'
+    implementation "com.squareup.moshi:moshi-kotlin:1.11.0"
+
+    implementation 'com.github.christophesmet:android_maskable_layout:v1.2.0'
+    implementation 'com.github.bmarrdev:android-DecoView-charting:v0.9.3'
+
+    implementation 'com.faltenreich:skeletonlayout:4.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation 'com.github.stfalcon:StfalconPriceRangeBar:0.1.2'
+    implementation 'io.coil-kt:coil:1.1.0'
+
+    // Lib core
+    implementation project(path: ':core')
+    implementation project(path: ':migrate')
+    implementation project(path: ':chat')
+
+    // Kotlin lib
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Widgets
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+    // Play Services - Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    // Design
+    implementation "com.airbnb.android:lottie:$lottie_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "de.hdodenhof:circleimageview:$circle_image_version"
+    implementation "com.google.android.material:material:$material_version"
+
+    // Direction maps
+    implementation 'com.akexorcist:google-direction-library:1.2.1'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // di - koin
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+    implementation "org.koin:koin-android:$koin_version"
+    androidTestImplementation "org.koin:koin-test:$koin_version"
+
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+
+}

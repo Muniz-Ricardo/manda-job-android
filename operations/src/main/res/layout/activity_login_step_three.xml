@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    tools:context=".activity.LoginStepThreeActivity">
+
+    <LinearLayout
+        android:id="@+id/label_text_step_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_label_step_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="true"
+            android:fontFamily="@font/cairo_semibold"
+            android:lineSpacingExtra="-18sp"
+            android:textColor="@color/colorWhite"
+            android:textSize="28sp"
+            android:text="Quais áreas você domina?"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/label_text_step_three"
+        android:background="@color/colorDark">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:alignContent="stretch"
+            app:flexWrap="wrap">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_dev_step_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/shape_select_none_login">
+
+                    <TextView
+                        android:id="@+id/tv_work_dev_step_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/cairo_regular"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:letterSpacing="0.022"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorLight030"
+                        android:text="Programação"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_design_step_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/shape_select_none_login">
+
+                    <TextView
+                        android:id="@+id/tv_work_design_step_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/cairo_regular"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:letterSpacing="0.022"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorLight030"
+                        android:text="Design"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_escritor_step_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/shape_select_none_login">
+
+                    <TextView
+                        android:id="@+id/tv_work_escritor_step_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/cairo_regular"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.022"
+                        android:textColor="@color/colorLight030"
+                        android:text="Escritor de trabalhos" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_coach_step_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/shape_select_none_login">
+
+                    <TextView
+                        android:id="@+id/tv_work_coach_step_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/cairo_regular"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.022"
+                        android:textColor="@color/colorLight030"
+                        android:text="Coach"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                android:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_other_step_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/shape_select_none_login"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_work_other_step_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/cairo_regular"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.022"
+                        android:textColor="@color/colorLight030"
+                        android:text="Outros"
+                        />
+
+                    <ImageView
+                        android:id="@+id/image_plus_work_step_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:src="@drawable/plus_gray"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_arrow_next_three"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/next_icon"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

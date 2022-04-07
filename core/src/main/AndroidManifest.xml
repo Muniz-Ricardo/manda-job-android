@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.nouva.core">
+
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="29.0.2"
+        tools:ignore="GradleOverrides"
+        tools:overrideLibrary="br.com.core" />
+
+</manifest>

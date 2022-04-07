@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="All">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+
+        <RelativeLayout
+            android:id="@+id/layImg"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:paddingHorizontal="18dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvImgChat"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/colorDark080"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:focusable="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/layMasterAsset"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true">
+
+                    <ImageView
+                        android:id="@+id/reveal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivResImageChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_img_profile_responses"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@null"
+                        tools:src="@null" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_above="@+id/cd"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="-20dp"
+                android:backgroundTint="@color/colorOrangeLight"
+                android:elevation="0dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="0dp"
+                        android:text="ver"
+                        android:textColor="@color/colorLight010"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

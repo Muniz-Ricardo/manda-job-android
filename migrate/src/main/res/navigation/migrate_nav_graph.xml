@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/migrate_nav_graph"
+    app:startDestination="@id/migrateFragment">
+
+    <fragment
+        android:id="@+id/migrateFragment"
+        android:name="br.com.nouva.migrate.ui.MigrateFragment"
+        android:label="MigrateFragment"
+        tools:layout="@layout/fragment_migrate" >
+        <action
+            android:id="@+id/action_migrateFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="br.com.nouva.migrate.ui.PayFragment"
+        android:label="PayFragment"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_payFragment_to_walletFragment"
+            app:destination="@id/walletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="br.com.nouva.migrate.ui.WalletFragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/addPayFragment"
+        android:name="br.com.nouva.migrate.ui.AddPayFragment"
+        android:label="AddPayFragment"
+        tools:layout="@layout/fragment_add_pay" >
+        <action
+            android:id="@+id/action_addPayFragment_to_payAddedFragment"
+            app:destination="@id/payAddedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payAddedFragment"
+        android:name="br.com.nouva.migrate.ui.PayAddedFragment"
+        android:label="PayAddedFragment"
+        tools:layout="@layout/fragment_pay_added" />
+
+</navigation>

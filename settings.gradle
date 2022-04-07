@@ -1,0 +1,6 @@
+include ':core'
+include ':operations'
+include ':onboarding'
+include ':migrate'
+include ':chat'
+include ':event'

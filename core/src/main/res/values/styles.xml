@@ -1,0 +1,260 @@
+<resources xmlns:ns2="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <!--<item name="colorPrimaryDark">@color/colorGreen</item>-->
+        <item name="colorPrimaryDark">@color/colorDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorControlHighlight">@color/colorSemiDark</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Order" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <!--<item name="colorPrimaryDark">@color/colorGreen</item>-->
+        <item name="colorPrimaryDark">@color/colorDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorControlHighlight">@color/colorSemiDark</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <!--<item name="colorPrimaryDark">@color/colorGreen</item>-->
+        <item name="colorPrimaryDark">@color/colorLight010</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorControlHighlight">@color/colorSemiDark</item>
+        <item name="android:textColorSecondary">@color/colorLight010</item>
+    </style>
+
+    <style name="PopupMenu" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">@drawable/shape_popup_orders</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:selectableItemBackgroundBorderless">
+            ?android:selectableItemBackgroundBorderless
+        </item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/cairo_regular</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:popupElevation">20dp</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">@color/colorDarkLow080</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="android:textColorSecondary">@color/colorLight020</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogThemeFilter" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyleFilter</item>
+    </style>
+
+    <style name="AppModalStyleFilter" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/colorSemiDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorControlNormal">@color/colorLowGray</item>
+        <item name="colorControlActivated">@color/colorSecondary</item>
+        <item name="android:paddingStart" ns2:ignore="NewApi">18dp</item>
+        <item name="android:paddingEnd" ns2:ignore="NewApi">34dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">34dp</item>
+        <item name="android:fontFamily">@font/cairo</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="TextApparenceInput" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/colorDark</item>
+        <item name="colorControlActivated">@android:color/transparent</item>
+        <item name="colorControlHighlight">@color/colorAlertOrange</item>
+        <item name="colorAccent">@color/colorAlertOrange</item>
+    </style>
+
+    <style name="TextLabelapper" parent="android:TextAppearance">
+        <item name="android:textColorHint">@color/colorSemiDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorControlNormal">@color/colorLowGray</item>
+        <item name="colorControlActivated">@color/colorSecondary</item>
+        <item name="android:paddingStart" ns2:ignore="NewApi">16dp</item>
+        <item name="android:paddingEnd" ns2:ignore="NewApi">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="hintText" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorSemiDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">50dp</item>
+        <item name="android:translationY">60dp</item>
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="hintTextv2" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorSemiDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:translationY">0dp</item>
+    </style>
+
+
+    <style name="Star" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+        <item name="colorAccent">@color/colorError</item>
+        <item name="colorControlHighlight">@color/colorSemiDark</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/colorLowGray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemThemeDark">
+        <item name="colorControlHighlight">@color/colorDarkBlue</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorControlHighlight">@color/colorSemiDark</item>
+    </style>
+
+
+    <style name="MyThemeOverlayFilledDense">
+        <item name="editTextStyle">@style/MyTextInputEditText_filledBox_dense
+        </item>
+    </style>
+
+    <style name="MyTextInputEditText_filledBox_dense" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense">
+        <item name="android:paddingStart" ns2:ignore="NewApi">0dp</item>
+        <item name="android:paddingEnd" ns2:ignore="NewApi">6dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">6dp</item>
+    </style>
+
+    <style name="EditText.Custom" parent="@style/TextAppearance.AppCompat">
+        <item name="android:letterSpacing">10</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/EditText.Custom</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="colorAccent">@color/colorStar</item>
+        <item name="colorControlNormal">@color/colorLight030</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_modal_sheet</item>
+    </style>
+
+    <style name="AppBottomSheetDialogThemePix" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStylePix</item>
+    </style>
+
+    <style name="AppModalStylePix" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_modal_pix</item>
+    </style>
+
+    <style name="AppBottomSheetDialogThemev2" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStylev2</item>
+        <item name="colorAccent">@color/colorLightSecondary080</item>
+        <item name="colorControlNormal">@color/colorLight030</item>
+    </style>
+
+    <style name="AppModalStylev2" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_modal_sheet</item>
+    </style>
+
+    <!-- h1 -->
+    <style name="Typographi.Title.h1" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_h1</item>
+    </style>
+
+    <!-- h2 -->
+    <style name="Typographi.Title.h2" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_h2</item>
+    </style>
+
+    <!-- h2 ultra bold -->
+    <style name="Typographi.Title.h2.bold" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans_bold</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_h2</item>
+    </style>
+
+    <!-- sub title large h1 -->
+    <style name="Typographi.Sub.h1" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_sub_title_h1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+    </style>
+
+    <!-- sub title large h2 -->
+    <style name="Typographi.Sub.h2" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorSemiDark</item>
+        <item name="android:textSize">@dimen/size_text_sub_title_h2</item>
+    </style>
+
+    <!-- sub title large h3 -->
+    <style name="Typographi.Sub.h3" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_sub_title_h3</item>
+    </style>
+
+
+    <!-- text body or paragraph -->
+    <style name="Typographi.Content.Label" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/pt_sans</item>
+        <item name="android:textColor">@color/colorGrayPrimary</item>
+        <item name="android:textSize">@dimen/size_text_body_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+</resources>

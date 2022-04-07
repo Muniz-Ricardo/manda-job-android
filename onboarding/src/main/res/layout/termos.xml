@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:background="@drawable/dialog_forget_password_shape"
+        tools:ignore="All">
+
+
+        <RelativeLayout
+            android:id="@+id/scroll_step_two"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/layout_arrow_next_two"
+                android:layout_below="@id/layLogoMj"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/label_text_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:id="@+id/tv_label_step_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="true"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="-6sp"
+                        android:text="Termos de Privacidade"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                       <ScrollView
+                           android:layout_width="wrap_content"
+                           android:layout_height="200dp"
+                           android:layout_marginTop="10dp">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="180dp"
+                               android:layout_marginHorizontal="34dp"
+                               android:layout_marginTop="15dp"
+                               android:fontFamily="@font/nunito_sans_regular"
+                               android:padding="10dp"
+                               android:gravity="center"
+                               android:includeFontPadding="true"
+                               android:letterSpacing="0.02"
+                               android:lineSpacingExtra="-6sp"
+                               android:text="Seja bem-vindo ao nosso site. Leia com atenção todos os termos abaixo.
+
+Este documento, e todo o conteúdo do site é oferecido por (ADICIONAR DADOS DA EMPRESA OU NOME FANTASIA), neste termo representado apenas por “EMPRESA”, que regulamenta todos os direitos e obrigações com todos que acessam o site, denominado neste termo como “VISITANTE”, reguardado todos os direitos previstos na legislação, trazem as cláusulas abaixo como requisito para acesso e visita do mesmo, situado no endereço (ADICIONAR ENDEREÇO DO SITE).
+
+A permanência no website implica-se automaticamente na leitura e aceitação tácita do presente termos de uso a seguir. Este termo foi atualizado pela última vez em 14 de setembro de 2021.
+
+1. DA FUNÇÃO DO SITE
+Este site foi criado e desenvolvido com a função de trazer conteúdo informativo de alta qualidade, a venda de produtos físicos, digitais e a divulgação de prestação de serviço. A EMPRESA busca através da criação de conteúdo de alta qualidade, desenvolvido por profissionais da área, trazer o conhecimento ao alcance de todos, assim como a divulgação dos próprios serviços.
+
+Nesta plataforma, poderá ser realizado tanto a divulgação de material original de alta qualidade, assim como a divulgação de produtos de e-commerce.
+
+Todo o conteúdo presente neste site foi desenvolvido buscando fontes e materiais de confiabilidade, assim como são baseados em estudos sérios e respeitados, através de"
+                               android:textColor="@color/colorWhite"
+                               android:textSize="16sp" />
+
+
+
+                       </ScrollView>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_text_step"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:id="@+id/btn_termo_aceito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_email_step_one"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:backgroundTintMode="add"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Aceito"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp"
+                        app:cardElevation="0dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

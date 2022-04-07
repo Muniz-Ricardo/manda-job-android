@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">manda job</string>
+
+    <!-- Orders -->
+    <string name="orders_lable_title">Jobs</string>
+
+    <!-- Discover -->
+    <string name="discover_lable.tile.for.you">For you</string>
+    <string name="discover_lable.title.general">General</string>
+</resources>

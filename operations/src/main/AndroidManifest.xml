@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.nouva.mandajob"
+    android:versionCode="64">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="29.0.2"
+        tools:ignore="GradleOverrides" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="br.com.core"
+        tools:replace="android:label, android:roundIcon, android:allowBackup">
+
+        <activity android:name="br.com.nouva.mandajob.activity.InboxActivity">
+        </activity>
+
+        <activity android:name="br.com.nouva.mandajob.activity.ViewProfileActivity">
+        </activity>
+
+        <activity android:name="br.com.nouva.mandajob.activity.MoreProjectsActivity">
+        </activity>
+
+        <activity
+            android:name="br.com.nouva.mandajob.activity.SignInUserActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="br.com.nouva.mandajob.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.Transparent">
+        </activity>
+
+        <activity android:name="br.com.nouva.mandajob.activity.WalletActivity" />
+        <activity
+            android:name="br.com.nouva.mandajob.activity.NewPaymentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name="br.com.nouva.mandajob.activity.MigrateActivity" />
+        <activity android:name="br.com.nouva.mandajob.activity.LoginStepThreeActivity" />
+
+        <activity
+            android:name="br.com.nouva.mandajob.activity.LoginStepTwoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="br.com.nouva.mandajob.activity.LoginStepOneActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.Order">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

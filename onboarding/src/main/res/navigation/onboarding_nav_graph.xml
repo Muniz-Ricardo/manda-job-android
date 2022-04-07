@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_nav_graph"
+    app:startDestination="@id/onbWelcomeFragment">
+
+    <fragment
+        android:id="@+id/onbWelcomeFragment"
+        android:name="br.com.nouva.onboarding.ui.OnbWelcomeFragment"
+        android:label="fragment_onb_welcome"
+        tools:layout="@layout/fragment_onb_welcome" >
+        <action
+            android:id="@+id/action_onbWelcomeFragment_to_onbLoginStepOneFragment"
+            app:destination="@id/onbLoginStepOneFragment"
+            app:enterAnim="@anim/fade_in_up"
+            app:exitAnim="@anim/fade_out_up"/>
+        <action
+            android:id="@+id/action_onbWelcomeFragment_to_onbSignInFragment"
+            app:destination="@id/onbSignInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onbLoginStepOneFragment"
+        android:name="br.com.nouva.onboarding.ui.OnbLoginStepOneFragment"
+        android:label="fragment_onb_login_step_one"
+        tools:layout="@layout/fragment_onb_login_step_one" >
+        <action
+            android:id="@+id/action_onbLoginStepOneFragment_to_onbLoginStepTwoFragment"
+            app:destination="@id/onbLoginStepTwoFragment"
+            app:enterAnim="@anim/fade_in_up"
+            app:exitAnim="@anim/fade_out_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/onbLoginStepTwoFragment"
+        android:name="br.com.nouva.onboarding.ui.OnbLoginStepTwoFragment"
+        android:label="fragment_onb_login_step_two"
+        tools:layout="@layout/fragment_onb_login_step_two" >
+        <action
+            android:id="@+id/action_onbLoginStepTwoFragment_to_onbLoginStepThreeFragment"
+            app:destination="@id/onbLoginStepThreeFragment"
+            app:enterAnim="@anim/fade_in_up"
+            app:exitAnim="@anim/fade_out_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/onbLoginStepThreeFragment"
+        android:name="br.com.nouva.onboarding.ui.OnbLoginStepThreeFragment"
+        android:label="OnbLoginStepThreeFragment"
+        tools:layout="@layout/fragment_onb_login_step_three">
+
+        <action
+            android:id="@+id/action_onbLoginStepThreeFragment_to_operations_nav_graph"
+            app:destination="@id/operations_nav_graph" />
+        <action
+            android:id="@+id/action_onbLoginStepThreeFragment_to_migrate_nav_graph"
+            app:destination="@id/migrate_nav_graph" />
+    </fragment>
+
+    <include
+        android:id="@+id/operations_nav_graph"
+        app:graph="@navigation/operations_nav_graph" />
+
+    <include
+        android:id="@+id/migrate_nav_graph"
+        app:graph="@navigation/migrate_nav_graph" />
+
+    <fragment
+        android:id="@+id/onbSignInFragment"
+        android:name="br.com.nouva.onboarding.ui.OnbSignInFragment"
+        android:label="OnbSignInFragment"
+        tools:layout="@layout/fragment_onb_sigin"/>
+
+</navigation>

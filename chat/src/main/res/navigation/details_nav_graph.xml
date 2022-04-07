@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_nav_graph"
+    app:startDestination="@id/seeDetailsFragment">
+
+    <fragment
+        android:id="@+id/seeDetailsFragment"
+        android:name="br.com.nouva.chat.ui.SeeDetailsFragment"
+        android:label="SeeDetailsFragment"
+        tools:layout="@layout/fragment_see_details" >
+        <action
+            android:id="@+id/action_seeDetailsFragment_to_chat_nav_graph"
+            app:destination="@id/chat_nav_graph" />
+    </fragment>
+
+    <include
+        android:id="@+id/chat_nav_graph"
+        app:graph="@navigation/chat_nav_graph"/>
+</navigation>

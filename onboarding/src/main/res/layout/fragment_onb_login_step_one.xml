@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="All">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:fillViewport="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/layout_toolbar_sigin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="18dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/button_cancel_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?selectableItemBackgroundBorderless"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_cancel_x_light" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/nunito"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="0dp"
+                        android:text="Inscreva-se"
+                        android:textColor="@color/colorLight05"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layLogoMj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="60dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layerType="software"
+                            android:src="@drawable/ic_icon_thunder_mj"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="18dp"
+                            android:fontFamily="@font/nunito"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.02"
+                            android:lineSpacingExtra="0dp"
+                            android:text="manda job"
+                            android:textColor="@color/colorLight05"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layLogoMj"
+                        android:layout_marginTop="40dp"
+                        android:orientation="vertical"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/name_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:textColorHint="@color/colorSemiDark">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_name_singUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="64dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="@font/nunito"
+                                android:hint="Nome"
+                                android:imeOptions="actionNext"
+                                android:includeFontPadding="false"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:paddingStart="20dp"
+                                android:textColor="@color/colorLight010"
+                                android:textColorHint="@color/colorLight030" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:textColorHint="@color/colorSemiDark">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_email_singUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="64dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="@font/nunito"
+                                android:hint="Email"
+                                android:imeOptions="actionNext"
+                                android:includeFontPadding="false"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:paddingStart="20dp"
+                                android:textColor="@color/colorLight010"
+                                android:textColorHint="@color/colorLight030" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/password_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:textColorHint="@color/colorSemiDark"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/colorDark070">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_password_singUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="64dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="@font/nunito"
+                                android:hint="Senha"
+                                android:imeOptions="actionDone"
+                                android:includeFontPadding="false"
+                                android:inputType="textPassword"
+                                android:paddingStart="20dp"
+                                android:textColor="@color/colorLight010"
+                                android:textColorHint="@color/colorLight030" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_agree_terms"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_marginEnd="4dp"
+                                android:background="?android:attr/listChoiceIndicatorMultiple"
+                                android:button="@null"
+                                android:theme="@style/checkBoxStyle"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <TextView
+                                android:id="@+id/tv_check_box_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:includeFontPadding="true"
+                                android:letterSpacing="0.04"
+                                android:lineSpacingExtra="-10sp"
+                                android:text="Concordo com todos Termos de serviços"
+                                android:textColor="@color/colorLight020"
+                                android:textSize="14sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_forgot_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_input_name"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_btn_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="30dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:clickable="false"
+                            android:elevation="0dp"
+                            android:focusable="false"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:id="@+id/layout_btn_create_acc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/shape_button_migrate_card"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?selectableItemBackgroundBorderless"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_semibold"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="0dp"
+                                    android:text="Criar conta"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tv_have_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="76dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:fontFamily="@font/nunito"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.02"
+                            android:text="Já tem conta? Entrar"
+                            android:textColor="@color/colorLight05"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

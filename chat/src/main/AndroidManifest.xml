@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.nouva.chat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="29.0.2"
+        tools:ignore="GradleOverrides" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon"
+        android:supportsRtl="true"
+        tools:overrideLibrary="br.com.core"
+        android:requestLegacyExternalStorage="true"
+        android:name="br.com.nouva.core.MainApplication"
+        tools:replace="android:label, android:roundIcon, android:allowBackup"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainChatActivity" />
+    </application>
+
+</manifest>

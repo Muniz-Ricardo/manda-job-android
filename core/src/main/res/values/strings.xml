@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">core</string>
+
+    <string name="start_top">M 20.7 7 C 21.1 6.6 21.1 6 20.7 5.6 L 18.4 3.3 C 18 2.9 17.4 2.9 17 3.3 L 15.2 5.1 L 19 8.9</string>
+    <string name="end_top">M 19.6 8 C 20 7.6 20 7 19.6 6.6 L 17.3 4.3 C 16.9 3.9 16.3 3.9 15.9 4.3 L 14.1 6.1 L 17.9 9.9</string>
+    <string name="account_profile.small.name.label">luzdedesign</string>
+    <string name="space">\@</string>
+
+    <string name="large_text">Offer people a seamless experience across the entire portfolio of Microsoft\'s mobile apps. Whether it\'s for a client, partner, or your own customers, design and build custom apps that are natively Android while still uniquely Fluent.</string>
+    <string name="large_text_space">"100dp" Offer people a seamless experience across the entire portfolio of Microsoft\'s mobile apps. Whether it\'s for a client, partner, or your own customers, design and build custom apps that are natively Android while still uniquely Fluent.</string>
+    <string name="large_text_wt_space">\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \ Offer people a seamless experience across the entire portfolio of Microsoft\'s mobile apps. Whether it\'s for a client, partner, or your own customers, design and build custom apps that are natively Android while still uniquely Fluent.</string>
+    <string name="desc_step_image">image top</string>
+    <string name="large_text_02">They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.</string>
+    <string name="large_text_03">Each card is made up of content blocks. All of the blocks, as a whole, are related to a single subject or destination. Content can receive different levels of emphasis, depending on its level of hierarchy.</string>
+    <string name="large_text_04">Are related to a single subject or destination. Content can receive different levels of emphasis, depending on its level of hierarchy.</string>
+
+    <string name="text_complete_01">Find your industry\'s top vetted marketing experts</string>
+    <string name="text_complete_02">Are related to a single subject or destination</string>
+    <string name="text_complete_03">People a seamless experience across the entire portfolio</string>
+    <string name="text_complete_04">Design and build custom apps that are natively Android</string>
+
+    <string name="url_image_man_yellow">https://mandajob-api-recomend.web.app/Images/img_man_black_yellow.png</string>
+    <string name="url_image_girl_red">https://mandajob-api-recomend.web.app/Images/mulher_negra.png</string>
+    <string name="url_image_girl_black_brown">https://i.pinimg.com/564x/a1/2c/e5/a12ce51c26b619d630b7ea0e2cf0fea1.jpg</string>
+    <string name="url_image_girl_pink">https://mandajob-api-recomend.web.app/Images/img_girl_pink.png</string>
+    <string name="url_image_girl_blue_smile">https://i.pinimg.com/564x/d5/19/1f/d5191f686f2afb6d2cd044b2bdfedfdf.jpg</string>
+    <string name="url_image_man_blue_black_power">https://i.pinimg.com/564x/17/40/d5/1740d5a64881af1efa07e6913e229b59.jpg</string>
+    <string name="url_image_girl_orange">https://i.pinimg.com/564x/7d/69/8d/7d698dd6c0bc80625143fec754bf7101.jpg</string>
+    <string name="url_image_girl_cake_head">https://i.pinimg.com/564x/e3/c7/0d/e3c70d03e9e78616dea26177ea12df08.jpg</string>
+    <string name="url_image_man_sky_blue">https://i.pinimg.com/564x/a0/66/ef/a066ef089967c204f06a544950bd9ac0.jpg</string>
+    <string name="url_image_man_brown">"https://i.pinimg.com/564x/34/37/a4/3437a43812ac031bcfe52f11244accd1.jpg"</string>
+
+    <string name="url_image_girl_power_tavi">https://i.pinimg.com/564x/1c/40/93/1c4093c844a57b6c16d7c41279ee1714.jpg</string>
+    <string name="url_image_man_pink">https://i.pinimg.com/564x/19/3c/f1/193cf109c6cb77391f93f55f05ec4c05.jpg</string>
+    <string name="url_image_man_blue">https://i.pinimg.com/564x/43/e6/60/43e6609a94502f1f347073fd16434f7a.jpg</string>
+
+    <string name="url_asset_image_pink_3d" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/eacfa5c0-d706-4d99-8f04-fd9264248658/wallpaper.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=Y2kyku4hlKmnVmjTtsQWY5gcBM%2BtWsLuuvT%2FLqOKpMddVm%2BTdZjXh09scfPxuB4eeZs8IGSDettOKc9ixB%2BskZZHoaC8POkOxe0bADIHOT1bQIzmVvnk51lvuqUMBiGT5cu%2BCdl6XTNKluK8%2F7Oa3N0NB%2BHpfPg4%2B1poKvGdp4a9DlurV%2FDwx%2BlNkUKMlUQqM2mm6xCm2hBSxQIO5ehmn9hlLSFY07joy5NiBPRiNRVuPNMoeaMkDIOdo%2FfdT%2FQeL%2F8NouFlSLup1P%2Bpf0RG8Wtu3CAw1HYltO%2FWHJDII6i5W8rgFRRtzxLk0fGsOGt%2B%2B4zgwNBqwvup9TLKxSqNXw%3D%3D]]></string>
+    <string name="url_asset_image_white_castle" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/82f19659-6c4f-443a-866f-bdc8269c1099/asset_2_.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=ml%2FqdnFLv1%2BfY4eitNXQL1dzgPggqk6opBWtTY%2Fv4XMyjwLKIWKDm7h7e1KNZB%2BQOgGVUmFLTpgNXZjaEqrH8%2BMBtY2JSYIpBQYZyPXXj7hJL%2BljlqEIGxNRQZVuZYWx%2BLKtX6liih7cbMC0PTs64VSsIyKae1EvpOMFs7Kc6C8Y8u5Aut0dtNXBd87kpftZMY4fAcBH9Z9veJRg1xx7fqCp5qKElispaPndgDj%2Br8WdXQqPDBj2n1GdC8E50GJtL0Xa9TR%2FTO1Cjk3ulpAVcaA7zh7DhPmLydBp6XWS2gXIFzaWMcmPH711%2FSjpmIdMH88Q%2FK0CgPiEASHEP%2Bo8%2Bw%3D%3D]]></string>
+    <string name="url_asset_image_abstract_dark" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/82f19659-6c4f-443a-866f-bdc8269c1099/asset_1_.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=pJWbMQO9q7S6uAdxmm62VNk7hkx80c4Qhtj2nOKUcNfol8Ka1AoeOUHJjThTVBh42WF0ozz2btX6WsX8rWi0ucVanVQOMtdY070ZYKMbp8xfeEM0GgbsxK3NKZiPoKrvoSUNAiZ4U3Zu3ORVfAeF2Hz5UVNevbf7Ue7JDcWOFyBAAe1MIh2q7diH7MlhlA1FmQt2TdWH0QqStQ9r%2FgvG4cBcbqCJGJVCTK7LufWRHh22xHUuxrF5hpuE3%2Bj0hBINaNz3ZLo8YuezDO4u3d0a%2BlxhjmnEpFCOEqYoeJifsEIGTQ1AdRmAxux7JBXh9pF3k9M%2Fe7t7N5%2BWgmn823SO%2Fw%3D%3D]]></string>
+    <string name="url_asset_image_blue_girl" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/82f19659-6c4f-443a-866f-bdc8269c1099/wallpaper.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=rjKRqBzUe8Pqy8WWs953F52%2Be1%2FO4JxtMJn9huqqqooAEkC%2FDDb1p8Y%2FbvCIb%2BUoUcD9uMRDSx2rcGiZYOk0%2FBsV9dJhDvgDEHymoIfeSdGyzJlGsjGuc%2FdKE7CjOcbgKlCcGBaVG%2FuPhxs%2B8znVCrTCjsUKq4Eh2mOp%2Ff%2Fqc51R66kPCu9HgQzxOMAVux3OHY62xLHeR4%2FgQkE5EWv%2F0KUxq%2Fk7VVamn5D8E%2B2H6D7%2FVGjEUCZIo6Gj%2BbdtazvNGRzMDXLYP5BNgWmq55DXb7wlUzNB1Vxht4u0NdxSQVrztNa9xa%2FWKy3AP2PW%2FgPifO5dxgLBUQFYt0Q5dGBlUw%3D%3D]]></string>
+    <string name="url_asset_image_white_cards">https://miro.medium.com/max/2000/1*ikTibDBjYlcCwHs26Ycs5Q.jpeg</string>
+    <string name="url_asset_image_girl_using_desk">https://media.glassdoor.com/l/58/08/64/49/nu-office.jpg</string>
+    <string name="url_asset_image_uis_dark">https://cdn.dribbble.com/users/821812/screenshots/10680359/media/e0940de54ff3d4b4187f1a7db698eaeb.jpg</string>
+    <string name="url_asset_image_3d_construction" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/6e4e2f51-d7c4-403b-a9a6-92b7fa0fc1c3/asset_1_.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=UeA8MS2DzsAdvAfs3UmCJvvLb37IqT2htWU3N%2FS7Gj9rD1rSbFI0UG6MTflfVwuZiQqPKUpA7ua4m8Q2CYr5QPGn0h1%2BUB56S2vaPrrbaLXV16enrABEt3dEAfiM9u5wXxEuyH0BRTDF%2BmiAGySwvGCgQLIA8DiE95PqQlcd3NXfNZz6RaNOWSXDJjCBC%2BJoimWqFeNiMorFr%2FZiMrgHfOnU3YQlOEyOsBO8%2FZrRgqG5U8yRrK1kDWFivrOnickcSFRwaeFqeLBckV%2FlQIWAf%2B%2BJw3D49EyBoSjcf9QxuBzcyxdfV9VzhoJ0D%2F15EaRw8kqbPDJAnVAYekcYlSbtVg%3D%3D]]></string>
+    <string name="url_asset_image_plants_girl_hug" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/0987d5ef-8896-408b-b635-efe8bcdc5c8d/wallpaper.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=UXh37Af0mN3L5VIs4rLy0Qhxq31UDb0vowAYWmRayFrbBSxSmFtkOAVP9mup8%2FifvwN0dTM%2BzcFdNIdaaakvq5z2KgZCfZj8GdP2HsSXFsKFOsVSQfbaiIXfJ5x4BqL9V5rZj%2BmQD2oRl7A1cfLTliLgfKg7mHTHh2rihV7CWNzPTr7JG4Ghl5rnh8KIJ%2BzhrCNnJ%2Fg5B0BLXE4Q3dxB3HDki%2Bkyj%2Fxm1VdlfSOLWsVD0XcopphPRRgWYIVdGOKpJWgeUIOU2LacHbVLUQRewfZAvTBYla9F5wzmsGPT4ksEt9XNBGNQYo9IVEG4du6Z9VwauiOrW0N%2BuQgbJyIWGQ%3D%3D]]></string>
+    <string name="url_asset_image_plants_girl_balance" tools:ignore="TypographyDashes"><![CDATA[https://storage.googleapis.com/api-projects-freelancer.appspot.com/0987d5ef-8896-408b-b635-efe8bcdc5c8d/asset_1_.png?GoogleAccessId=firebase-adminsdk-lmjb2%40api-projects-freelancer.iam.gserviceaccount.com&Expires=16447017600&Signature=Fk1l5yWSpJHSgcRUhCZdqI%2B%2F66QMGB4KxAWtDN65eyQ3Ivp%2BohFprxDQetxde4lmK4rVcHzVluoMdOQSJHVGugUo9KyHtamRscS4rXlRAg2hczOgc5gjuIS%2FgVmZCqdu%2FcODVhEcavjSy36M6E2iDbmOTUpNWLPwfMSyvfd1HfkXOsQYZGuK%2FEJdfDH%2B2exucn0O2XjzBg7MW%2Bd9Nj1wb%2BAiWJI%2BjKs6xVPiD7HcTkAwTo%2Fsh6E4aDqpAH2fngMgOOgBRt545GEcR2KBF%2FXQwT3emRX07c%2FCkiKtX0tMAT9fNP%2FD%2BkvtypckJYaQjb%2F9mflr7zxjiO8XpSla%2FEbU2w%3D%3D]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

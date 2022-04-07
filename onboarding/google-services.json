@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345395413368",
+    "project_id": "manda-joba-app",
+    "storage_bucket": "manda-joba-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345395413368:android:0dd6ae51ed98648196088d",
+        "android_client_info": {
+          "package_name": "br.com.nouva.onboarding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345395413368-ef2el5edfja6evu1n72fonhrpfn7a5jn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0HJVWiBslBpurC35q7UUw94l627y3doE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345395413368-ef2el5edfja6evu1n72fonhrpfn7a5jn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="12dp"
+    android:height="12dp"
+    android:viewportWidth="42"
+    android:viewportHeight="42">
+    <group android:name="group_1">
+        <group android:name="group">
+            <path
+                android:name="path"
+                android:pathData="M 30.984 20.484 L 13.122 37.875 M 13.122 3.996 L 30.984 22.581"
+                android:strokeWidth="4.6"
+                android:strokeColor="@color/colorLight020"
+                android:strokeMiterLimit="10" />
+        </group>
+    </group>
+</vector>
