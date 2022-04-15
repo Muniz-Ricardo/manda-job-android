@@ -68,6 +68,7 @@ class MainViewModel(
     private val _auth: MutableLiveData<Signup> = MutableLiveData()
     val auth: LiveData<Signup> get() = _auth
 
+
     private val _email: MutableLiveData<String> = MutableLiveData()
     val email: LiveData<String> get() = _email
 
