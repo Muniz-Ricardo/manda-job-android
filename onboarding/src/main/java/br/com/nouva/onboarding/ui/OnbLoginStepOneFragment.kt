@@ -131,7 +131,7 @@ class OnbLoginStepOneFragment : Fragment() {
         auth?.createUserWithEmailAndPassword(email, password)
             ?.addOnCompleteListener { task->
                 if (task.isSuccessful) {
-                    auth!!.currentUser?.let { addUserToDatabase(name, email, it.uid) }
+                    auth!!.currentUser?.let { addUserToDatabase(name, email) }
 
                     retrieveAndStoreToken()
 
@@ -152,11 +152,11 @@ class OnbLoginStepOneFragment : Fragment() {
             }
     }
 
-    private fun addUserToDatabase(name: String, email: String, uid: String ){
+    private fun addUserToDatabase(name: String, email: String ){
 
         dbRef = FirebaseDatabase.getInstance().getReference()
 
-        dbRef.child("user").child(uid).setValue(User(name, email, uid))
+        dbRef.child("user").child(name).setValue(User(name, email))
 
     }
 
