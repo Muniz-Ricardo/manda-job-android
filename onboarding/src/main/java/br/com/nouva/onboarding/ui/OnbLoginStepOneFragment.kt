@@ -143,15 +143,11 @@ class OnbLoginStepOneFragment : Fragment() {
                     )
 
                    findNavController().navigate(
-
-
                        R.id.onbLoginStepTwoFragment, bundle)
-
                 } else {
                     val erro = task.exception.tos()
                     errosFirebse(erro)
                     Log.d("erroFF",task.exception.tos())
-
                 }
             }
     }
