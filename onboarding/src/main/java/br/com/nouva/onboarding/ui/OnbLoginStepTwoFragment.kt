@@ -66,9 +66,6 @@ class OnbLoginStepTwoFragment : Fragment() {
                   FirebaseAuth.getInstance().signOut()
 
               }
-
-
-
         }
 
 
